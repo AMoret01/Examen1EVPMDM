@@ -23,6 +23,21 @@ const filterTextOnKeyUp = () => {
   textElement.innerText = filtrarPalabras(textoValue, caracter).join(" ") || texto;
 }
 
+const miForm = document.getElementById('miForm');
+    miForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const formData = new FormData(miForm);
+      const jsonData = {};
+      for (const [k, v] of formData) {
+        jsonData[k] = v;
+      }
+      document.getElementById("json-result").innerHTML = JSON.stringify(jsonData);
+
+      // return jsonData;
+    });
+
+
+
 // console.log(filtrarPalabras(textoDividido,caracter).join(" "));
 
 // //  const aceptar = document.createElement('button');

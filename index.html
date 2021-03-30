@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Base de código para el ejercicio 1</title>
     <link rel='stylesheet' href='./assets/css/index.css'/>
-    <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 <div class='input-container'>
@@ -23,20 +22,21 @@
 <div class='image-container'>
     <img src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' width='100'/>
 </div>
-<div class='form-container'>
+<form action="" method="post" class='form-container' id="miForm">
     <h3>Formulario</h3>
     <div class='field-container'>
-        <label>Nombre:</label><input type='text' placeholder='Ej.: Fran'/>
+        <label for="Nombre">Nombre:</label><input type='text' name="Nombre" placeholder='Ej.: Fran'/>
     </div>
     <div class='field-container'>
-        <label>Edad:</label><input type='text' placeholder='Ej: 45' maxlength='2'/>
+        <label for="Edad">Edad:</label><input type='text' name="Edad" placeholder='Ej: 45' maxlength='2'/>
     </div>
     <div class='form-actions'>
-        <button>Convertir en JSON</button>
+        <button type="submit" value="Convertir" id="btnConvert">Convertir en JSON</button>
     </div>
-</div>
+</form>
 <div class='result-container'>
     <p id='json-result'>Aquí debe ir el resultado del formulario en formato json</p>
 </div>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
