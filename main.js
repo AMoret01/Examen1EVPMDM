@@ -25,24 +25,6 @@ const filterTextOnKeyUp = () => {
 
 // console.log(filtrarPalabras(textoDividido,caracter).join(" "));
 
- const dividirTexto = (cadenaADividir,separador) => {
-     var array = cadenaADividir.split(separador);
- 
-    //  for (var i=0; i < array.length; i++) {
-    //     console.log(array[i] + " / ");
-    // }
-      return array;
-  }
-// //  dividirTexto(texto, espacio);
-
-
 // //  const aceptar = document.createElement('button');
 // //     aceptar.textContent = "Aceptar";
 // //     aceptar.addEventListener('click', /*funcionfinal*/);
-// const cadena = dividirTexto(texto, espacio)
-// const letra = 'c'
-// const filterText = (cadena,letra) => {
-//    return cadena.filter(item => !letra.includes(item));
-// }
-
-// console.log(filterText(cadena,letra));
