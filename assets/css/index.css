@@ -22,9 +22,38 @@ body {
 }
 
 .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     height: 300px;
     width: 100px;
-    border: 1px solid salmon;
+    border: 2px solid red;
+}
+
+.image-container1 {
+    height: 90px;
+    width: 95px;
+    border: 2px solid blue;
+}
+
+.image-container2 {
+    height: 90px;
+    width: 95px;
+    border: 2px solid blue;
+}
+
+.image-container3 {
+    height: 90px;
+    width: 95px;
+    border: 2px solid blue;
+}
+
+.directions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 30px;
 }
 
 .form-container {

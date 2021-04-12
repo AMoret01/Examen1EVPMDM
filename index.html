@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Base de código para el ejercicio 1</title>
-    <link rel='stylesheet' href='./assets/css/index.css'/>
+    <link rel='stylesheet' href='./assets/css/index.css' />
 </head>
-<body>
-<div class='input-container'>
-    <input id="filterText" onkeyup="filterTextOnKeyUp()" type='text' value='' placeholder='Por favor, escribe una letra' maxlength='1'/>
-</div>
-<div id="texto" class='text-container'>
-    Lorem ipsum dolor sit amet consectetur adipiscing elit gravida cras proin justo, diam pulvinar in leo aenean morbi
-    nunc lobortis nibh. Sollicitudin mattis turpis neque condimentum posuere volutpat dignissim cras, platea egestas
-    pharetra etiam sagittis a et, habitasse placerat mi malesuada facilisis velit ligula. Lacinia cras justo cum viverra
-    gravida egestas neque dictum, auctor sociosqu mauris lacus erat placerat condimentum, varius fames praesent laoreet
-    est donec suscipit.
-</div>
-<div id='buttons-container'>
 
-</div>
-<div class='image-container'>
-    <img src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' width='100'/>
-</div>
-<form action="" method="post" class='form-container' id="miForm">
-    <h3>Formulario</h3>
-    <div class='field-container'>
-        <label for="Nombre">Nombre:</label><input type='text' name="Nombre" placeholder='Ej.: Fran'/>
+<body>
+    <div class='input-container'>
+        <input id="filterText" onkeyup="filterTextOnKeyUp()" type='text' value=''
+            placeholder='Por favor, escribe una letra' maxlength='1' />
     </div>
-    <div class='field-container'>
-        <label for="Edad">Edad:</label><input type='text' name="Edad" placeholder='Ej: 45' maxlength='2'/>
+    <div name="texto" id="texto" class='text-container'>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit gravida cras proin justo, diam pulvinar in leo aenean
+        morbi
+        nunc lobortis nibh. Sollicitudin mattis turpis neque condimentum posuere volutpat dignissim cras, platea egestas
+        pharetra etiam sagittis a et, habitasse placerat mi malesuada facilisis velit ligula. Lacinia cras justo cum
+        viverra
+        gravida egestas neque dictum, auctor sociosqu mauris lacus erat placerat condimentum, varius fames praesent
+        laoreet
+        est donec suscipit.
     </div>
-    <div class='form-actions'>
-        <button type="submit" value="Convertir" id="btnConvert">Convertir en JSON</button>
+    <div id='buttons-container' class="buttons-container">
     </div>
-</form>
-<div class='result-container'>
-    <p id='json-result'>Aquí debe ir el resultado del formulario en formato json</p>
-</div>
-<script type="text/javascript" src="main.js"></script>
+    <br/><br/>
+
+    <div class='image-container'>
+            
+    </div>
+    <form action="" method="post" class='form-container' id="miForm">
+        <h3>Formulario</h3>
+        <div class='field-container'>
+            <label for="Nombre">Nombre:</label><input type='text' name="Nombre" placeholder='Ej.: Fran' />
+        </div>
+        <div class='field-container'>
+            <label for="Edad">Edad:</label><input type='text' name="Edad" placeholder='Ej: 45' maxlength='2' />
+        </div>
+        <div class='form-actions'>
+            <button type="submit" value="Convertir" id="btnConvert">Convertir en JSON</button>
+        </div>
+    </form>
+    <div class='result-container'>
+        <p id='json-result'>Aquí debe ir el resultado del formulario en formato json</p>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
