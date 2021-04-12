@@ -22,12 +22,24 @@
         laoreet
         est donec suscipit.
     </div>
-    <div id='buttons-container' class="buttons-container">
+    <div id='buttons-container' onsubmit="crearBotones()" class="buttons-container">
     </div>
     <br/><br/>
+    <div class='container'>
+        <div class='image-container'>
+            <div id="arriba" class='image-container1'>
+                <img id="imgJS" src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' width='95' height="90"/>
+            </div>
 
-    <div class='image-container'>
-            
+            <div id="centro" class='image-container2'></div>
+
+            <div id="abajo" class='image-container3'></div>
+        </div>
+        <br/>
+        <div class='directions-container'>
+            <button type="button" onclick="moverImagenArriba()" value="Subir" id="btnSubir">Subir imagen</button>
+            <button type="button" onclick="moverImagenAbajo()" value="Bajar" id="btnBajar">Bajar imagen</button>
+        </div>
     </div>
     <form action="" method="post" class='form-container' id="miForm">
         <h3>Formulario</h3>

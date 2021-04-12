@@ -42,73 +42,73 @@ miForm.addEventListener("submit", function (e) {
 // Fin Ej 2
 
 // Ej 3
- function crearBotones() {
+// function crearBotones() {
 
-   const bContar = document.createElement("button");
-   bContar.setAttribute('id', 'bContar');
-   bContar.setAttribute('tag', 'Contar palabras');
-   bContar.addEventListener('click', function () {
-     const wordCount = () => {
-       const texto = document.getElementById("texto").innerHTML;
-       const result = "Palabras contadas: " + texto.length + " palabras";
-       return result;
-     }
-     const tempSpan = document.createElement('span');
+//   const bContar = document.createElement("button");
+//   bContar.setAttribute('id', 'bContar');
+//   bContar.setAttribute('tag', 'Contar palabras');
+//   bContar.addEventListener('click', function () {
+//     const wordCount = () => {
+//       const texto = document.getElementById("texto").innerHTML;
+//       const result = "Palabras contadas: " + texto.length + " palabras";
+//       return result;
+//     }
+//     const tempSpan = document.createElement('span');
     
-     const result = document.getElementsByTagName("span")[0];
-     result = wordCount;
-     tempSpan.insertAdjacentElement('afterend',result);
-  });
+//     const result = document.getElementsByTagName("span")[0];
+//     result = wordCount;
+//     tempSpan.insertAdjacentElement('afterend',result);
+//  });
 
- const bRestaurar = document.createElement('button');
- bRestaurar.setAttribute('id', 'bRestaurar');
- bRestaurar.addEventListener('click', function () {
-   const texto = document.getElementById("texto").innerHTML;
-   const tempSpan = document.createElement('span');
-   const result = document.getElementsByTagName("span")[0];
-   result = "Palabras contadas: " + texto.length + " palabras";
-   tempSpan.insertAdjacentElement('afterend',res);
-   return result;
- });
- };
+// const bRestaurar = document.createElement('button');
+// bRestaurar.setAttribute('id', 'bRestaurar');
+// bRestaurar.addEventListener('click', function () {
+//   const texto = document.getElementById("texto").innerHTML;
+//   const tempSpan = document.createElement('span');
+//   const result = document.getElementsByTagName("span")[0];
+//   result = "Palabras contadas: " + texto.length + " palabras";
+//   tempSpan.insertAdjacentElement('afterend',res);
+//   return result;
+// });
+// };
 // Fin Ej 3
 
-// // Ej 4
+// Ej 4
 
-// const moverImagenArriba = () => {
-//   const botonElement = document.getElementById("btnSubir");
-//   const contador = 0;
-//   botonElement.onclick = function () {
-//     contador++;
+const moverImagenArriba = () => {
+  const botonElement = document.getElementById("btnSubir");
+  const contador = 0;
+  botonElement.onclick = function () {
+    contador++;
 
-//   }
-//   if (contador % 2 == 0) {
-//     const arriba = document.getElementById("arriba");
-//     const centro = document.getElementById("centro");
-//     centro.insertAdjacentElement("beforebegin", arriba);
-//   }else{
-//     const arriba = document.getElementById("arriba");
-//     const abajo = document.getElementById("abajo");
-//     abajo.insertAdjacentElement("beforebegin", arriba);
-//   }
-// }
+  }
+  if (contador % 2 == 0) {
+    const arriba = document.getElementById("arriba");
+    const centro = document.getElementById("centro");
+    centro.insertAdjacentElement("beforebegin", arriba);
+  }else{
+    const arriba = document.getElementById("arriba");
+    const abajo = document.getElementById("abajo");
+    abajo.insertAdjacentElement("beforebegin", arriba);
+  }
+}
 
-// const moverImagenAbajo = () => {
-//   const botonElement = document.getElementById("btnBajar");
-//   const contador = 0;
-//   botonElement.onclick = function () {
-//     contador++;
-//   }
-//   if (botonElement.onclick % 2 == 0) {
-//     const arriba = document.getElementById("arriba");
-//     const abajo = document.getElementById("abajo");
-//     arriba.insertAdjacentElement("afterend", abajo);
+const moverImagenAbajo = () => {
+  const botonElement = document.getElementById("btnBajar");
+  const contador = 0;
+  botonElement.onclick = function () {
+    contador++;
+  }
+  if (contador % 2 == 0) {
+    const arriba = document.getElementById("arriba");
+    const abajo = document.getElementById("abajo");
+    arriba.insertAdjacentElement("afterend", abajo);
     
-//   }else{
-//     const arriba = document.getElementById("arriba");
-//     const centro = document.getElementById("centro");
-//     centro.insertAdjacentElement("afterend", arriba);
-//   }
-// }
+  }else{
+    const arriba = document.getElementById("arriba");
+    const centro = document.getElementById("centro");
+    centro.insertAdjacentElement("afterend", arriba);
+  }
+}
 
-// // Fin Ej 4
+// Fin Ej 4
