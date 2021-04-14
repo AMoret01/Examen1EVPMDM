@@ -1,4 +1,4 @@
-
+crearBotones();
 
 // Ej 1
 const filtrarPalabras = (cadenaDeTexto, caracterARemplazar) => {
@@ -92,7 +92,6 @@ function crearBotones()  {
 // Fin Ej 3
 
 // Ej 4
-
 const moveImg = (direction) => {
   const imgContainer = document.querySelector(".image-container");
   const imgDivNode =  document.querySelector(".image-container > div > img").parentNode;
