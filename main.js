@@ -42,35 +42,53 @@ miForm.addEventListener("submit", function (e) {
 // Fin Ej 2
 
 // Ej 3
-// function crearBotones() {
+function crearBotones()  {
 
-//   const bContar = document.createElement("button");
-//   bContar.setAttribute('id', 'bContar');
-//   bContar.setAttribute('tag', 'Contar palabras');
-//   bContar.addEventListener('click', function () {
-//     const wordCount = () => {
-//       const texto = document.getElementById("texto").innerHTML;
-//       const result = "Palabras contadas: " + texto.length + " palabras";
-//       return result;
-//     }
-//     const tempSpan = document.createElement('span');
-    
-//     const result = document.getElementsByTagName("span")[0];
-//     result = wordCount;
-//     tempSpan.insertAdjacentElement('afterend',result);
-//  });
+  const myDiv = document.getElementById("buttons-container");
 
-// const bRestaurar = document.createElement('button');
-// bRestaurar.setAttribute('id', 'bRestaurar');
-// bRestaurar.addEventListener('click', function () {
-//   const texto = document.getElementById("texto").innerHTML;
-//   const tempSpan = document.createElement('span');
-//   const result = document.getElementsByTagName("span")[0];
-//   result = "Palabras contadas: " + texto.length + " palabras";
-//   tempSpan.insertAdjacentElement('afterend',res);
-//   return result;
-// });
-// };
+  // create the button object and add the text to it
+  const bContar = document.createElement("BUTTON");
+  bContar.innerHTML = "Contar Palabras";
+  bContar.setAttribute('id', 'bContar');
+  bContar.style.margin = "5px";
+
+  bContar.onclick = function ()
+  {
+    const contar = document.getElementById("bContar");
+
+    const span = document.createElement("span")
+    span.setAttribute('id', 'mySpan');
+
+    const texto = document.getElementById("texto").innerHTML;
+    const result = document.createElement('h2');
+    result.textContent = "Palabras contadas: " + texto.length + " palabras.";
+    span.appendChild(result);
+
+    contar.insertAdjacentElement('afterend', span);
+
+    contar.appendChild(span);   
+
+  }
+
+  // add the button to the div
+  myDiv.appendChild(bContar);
+
+  // create the button object and add the text to it
+  const bRestaurar = document.createElement("BUTTON");
+  bRestaurar.innerHTML = "Restaurar";
+  bRestaurar.setAttribute('id', 'bRestaurar');
+  bRestaurar.style.margin = "5px";
+
+  bRestaurar.onclick = function ()
+  {
+    const span = document.getElementById("mySpan");
+
+    span.remove();
+
+  }
+  // add the button to the div
+  myDiv.appendChild(bRestaurar);
+}
 // Fin Ej 3
 
 // Ej 4
