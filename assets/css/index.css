@@ -67,6 +67,7 @@ body {
     display: flex;
     flex-direction: row;
     padding: 0.5rem;
+    
 }
 
 .field-container label {
