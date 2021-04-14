@@ -116,3 +116,29 @@ const moverImagenAbajo = () => {
 }
 
 // Fin Ej 4
+
+// Ej 5
+
+window.onload = function()
+		{
+			const elemento=document.getElementById("texto");
+			elemento.onmouseover = function(e) {
+ 
+				// El contenido de esta funcion se ejecutara cuanso el mouse
+				// pase por encima del elemento
+        elemento.style.fontWeight = "bold";
+        elemento.style.color = "yellow";
+        elemento.style.backgroundColor = "deeppink";
+			};
+			elemento.onmouseout = function(e) {
+ 
+				// El contenido de esta funcion se ejecutara cuanso el mouse
+				// salga del elemento
+        
+        elemento.style.fontWeight = "lighter";
+        elemento.style.color = "black";
+        elemento.style.backgroundColor = "white";
+			};
+		}
+
+// Fin Ej 5
