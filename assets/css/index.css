@@ -92,3 +92,12 @@ body {
     font-size: 1rem;
     color: lightgray;
 }
+
+.container > div {
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
