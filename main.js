@@ -75,40 +75,27 @@ miForm.addEventListener("submit", function (e) {
 
 // Ej 4
 
-const moverImagenArriba = () => {
-  const botonElement = document.getElementById("btnSubir");
-  const contador = 0;
-  botonElement.onclick = function () {
-    contador++;
+const moveImg = (direction) => {
+  const imgContainer = document.querySelector(".image-container");
+  const imgDivNode =  document.querySelector(".image-container > div > img").parentNode;
+  const availableDivs = [...imgContainer.childNodes].filter(el => /div/i.test(el.tagName));
 
-  }
-  if (contador % 2 == 0) {
-    const arriba = document.getElementById("arriba");
-    const centro = document.getElementById("centro");
-    centro.insertAdjacentElement("beforebegin", arriba);
-  }else{
-    const arriba = document.getElementById("arriba");
-    const abajo = document.getElementById("abajo");
-    abajo.insertAdjacentElement("beforebegin", arriba);
-  }
+  const imgPosition = availableDivs.indexOf(imgDivNode);
+  const nextPostion = imgPosition + direction;
+  
+  if (nextPostion > (availableDivs.length - 1) || nextPostion < 0)
+    return;
+
+  availableDivs[nextPostion].insertAdjacentElement((direction < 0) ? "beforebegin" : "afterend" , imgDivNode);
+
+}
+
+const moverImagenArriba = () => {
+  moveImg(-1);
 }
 
 const moverImagenAbajo = () => {
-  const botonElement = document.getElementById("btnBajar");
-  const contador = 0;
-  botonElement.onclick = function () {
-    contador++;
-  }
-  if (contador % 2 == 0) {
-    const arriba = document.getElementById("arriba");
-    const abajo = document.getElementById("abajo");
-    arriba.insertAdjacentElement("afterend", abajo);
-    
-  }else{
-    const arriba = document.getElementById("arriba");
-    const centro = document.getElementById("centro");
-    centro.insertAdjacentElement("afterend", arriba);
-  }
+  moveImg(1);
 }
 
 // Fin Ej 4
